@@ -5,6 +5,10 @@ $ mise install
 $ pnpm install
 $ ./scripts/generate-all-conversations.json.js
 $ pnpm run dev
+```
+
+
+```sh
 $ pnpm run build
 $ pnpm run preview
 ```

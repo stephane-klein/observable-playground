@@ -11,6 +11,9 @@ importers:
       '@observablehq/framework':
         specifier: 1.13.3
         version: 1.13.3(@types/markdown-it@14.1.2)
+      arquero:
+        specifier: 8.0.3
+        version: 8.0.3
       d3-dsv:
         specifier: 3.0.1
         version: 3.0.1
@@ -560,6 +563,9 @@ packages:
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
 
+  '@uwdata/flechette@2.1.0':
+    resolution: {integrity: sha512-CsVgFIc94Rb5UhKvAK6E2rCFV+H6WkDzBEjYZvl2lfcI9vqLRafdngd9o5cq2lsA2offxCmJXdS1DE7ACPn33w==}
+
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
     engines: {node: '>=0.4.0'}
@@ -594,6 +600,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  arquero@8.0.3:
+    resolution: {integrity: sha512-7YQwe/GPVBUiahaPwEwgvu6VHyuhX0Ut61JZlIJYsAobOH5unLBwTmh43BobhX/N4dW1sb8WyKlQ8GjFq2whzQ==}
 
   async@3.2.6:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
@@ -1922,6 +1931,8 @@ snapshots:
 
   '@types/resolve@1.20.2': {}
 
+  '@uwdata/flechette@2.1.0': {}
+
   acorn-walk@8.3.4:
     dependencies:
       acorn: 8.15.0
@@ -1945,6 +1956,11 @@ snapshots:
       sprintf-js: 1.0.3
 
   argparse@2.0.1: {}
+
+  arquero@8.0.3:
+    dependencies:
+      '@uwdata/flechette': 2.1.0
+      acorn: 8.15.0
 
   async@3.2.6: {}
 

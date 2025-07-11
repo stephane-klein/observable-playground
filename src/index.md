@@ -2,12 +2,19 @@
 
 Cette page contient quelques statistiques de mon utilisation d'agents conversationnels.
 
+Depuis juin 2025, j'ai migré vers [Open WebUI](https://openwebui.com/) couplé avec [OpenRouter](https://openrouter.ai/) et [LMArena](https://lmarena.ai/) que je n'ai pas encore inclus dans ce tableau. Je pense les intégrer prochainement.
+
+```js
+const longData = FileAttachment("data/all-conversations.long.json").json();
+```
+
 ## Nombre de threads par mois
 
 Voici le nombre de *threads* que j'ai ouvert par mois, sur ChatGPT et Claude :
 
 ```js
-const data = FileAttachment("data/all-conversations.json").json();
+const threads = aq.from(longData)
+        .filter(d => d.metric === 'thread');
 ```
 
 ```js
@@ -17,49 +24,58 @@ Plot.plot({
         label: "Threads",
         grid: true
     },
+    color: {legend: true},
     marks: [
         Plot.ruleY([0]),
-        Plot.lineY(
-            data,
+        Plot.rectY(
+            threads,
             {
                 x: d => new Date(d.month),
-                y: "total_threadCount"
+                y: "value",
+                interval: "month",
+                fill: "platform",
+                tip: true
             }
         )
     ]
 })
 ```
 
+
+```js
+const threadsByMonth = (
+        threads.derive({ 
+            full_key: d => d.role ? 
+                `${d.platform}_${d.role}_${d.metric}` : 
+                `${d.platform}_${d.metric}`
+        })
+        .groupby('month')
+        .pivot('full_key', 'value')
+        .derive({
+            total: d => d.chatgpt_thread + d.claude_thread
+        })
+)
+```
+
 ```js
 Inputs.table(
-    data,
+    threadsByMonth,
     {
-        columns: [
-            "month",
-            "chatgpt_threadCount",
-            "claude_threadCount",
-            "total_threadCount"
-        ],
-        header: {
-            month: "Mois",
-            "chatgpt_threadCount": "ChatGPT",
-            "claude_threadCount": "Claude",
-            "total_threadCount": "Total"
-        },
         height: "auto",
-        rows: data.length,
-        select: false
+        select: false,
+        rows: threadsByMonth.numRows()
     }
 )
 ```
 
-Attention, depuis juin 2025, j'ai migré vers [Open WebUI](https://openwebui.com/) couplé avec [OpenRouter](https://openrouter.ai/) et [LMArena](https://lmarena.ai/) que je n'ai pas encore inclus dans ce tableau. Je pense les intégrer prochainement.
-
-## Nombre par mots envoyés et reçu
+## Nombre de mots envoyés et reçu par mois
 
 ```js
-Plot.legend({color: {domain: ["Utilisateur", "Assitant"], range: ["red", "blue"]}})
+const words = aq.from(longData)
+        .filter(d => d.metric === 'words');
 ```
+
+### Mots envoyés
 
 ```js
 Plot.plot({
@@ -68,46 +84,45 @@ Plot.plot({
         label: "Mots",
         grid: true
     },
+    color: {legend: true},
     marks: [
         Plot.ruleY([0]),
-        Plot.lineY(
-            data,
+        Plot.rectY(
+            words.filter(d => d.role === 'user'),
             {
                 x: d => new Date(d.month),
-                y: "total_userWordsCount",
-                stroke: "red"
-            }
-        ),
-        Plot.lineY(
-            data,
-            {
-                x: d => new Date(d.month),
-                y: "total_assistantWordsCount",
-                stroke: "blue"
+                y: "value",
+                interval: "month",
+                fill: "platform",
+                tip: true
             }
         )
     ]
 })
 ```
 
-```js
-Inputs.table(
-    data,
-    {
-        columns: [
-            "month",
-            "total_userWordsCount",
-            "total_assistantWordsCount"
-        ],
-        header: {
-            month: "Mois",
-            "total_userWordsCount": "Total User Words count",
-            "total_assistantWordsCount": "Total assistant Words count"
-        },
-        height: "auto",
-        rows: data.length,
-        select: false
-    }
-)
-```
+### Mots reçus
 
+```js
+Plot.plot({
+    width: width,
+    y: {
+        label: "Mots",
+        grid: true
+    },
+    color: {legend: true},
+    marks: [
+        Plot.ruleY([0]),
+        Plot.rectY(
+            words.filter(d => d.role === 'assistant'),
+            {
+                x: d => new Date(d.month),
+                y: "value",
+                interval: "month",
+                fill: "platform",
+                tip: true
+            }
+        )
+    ]
+})
+```
