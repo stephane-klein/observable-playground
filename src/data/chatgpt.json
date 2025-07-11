@@ -1,0 +1,297 @@
+{
+    "byMonth": [
+        {
+            "month": "2022-12",
+            "count": {
+                "threadCount": 2,
+                "userCharacterCount": 364,
+                "userWordsCount": 71,
+                "assistantCharacterCount": 4245,
+                "assistantWordsCount": 650
+            }
+        },
+        {
+            "month": "2023-01",
+            "count": {
+                "threadCount": 1,
+                "userCharacterCount": 257,
+                "userWordsCount": 51,
+                "assistantCharacterCount": 1843,
+                "assistantWordsCount": 346
+            }
+        },
+        {
+            "month": "2023-04",
+            "count": {
+                "threadCount": 16,
+                "userCharacterCount": 7791,
+                "userWordsCount": 1469,
+                "assistantCharacterCount": 23404,
+                "assistantWordsCount": 4176
+            }
+        },
+        {
+            "month": "2023-05",
+            "count": {
+                "threadCount": 7,
+                "userCharacterCount": 5975,
+                "userWordsCount": 1112,
+                "assistantCharacterCount": 18148,
+                "assistantWordsCount": 3251
+            }
+        },
+        {
+            "month": "2023-06",
+            "count": {
+                "threadCount": 9,
+                "userCharacterCount": 5371,
+                "userWordsCount": 972,
+                "assistantCharacterCount": 7005,
+                "assistantWordsCount": 1246
+            }
+        },
+        {
+            "month": "2023-07",
+            "count": {
+                "threadCount": 17,
+                "userCharacterCount": 14491,
+                "userWordsCount": 2656,
+                "assistantCharacterCount": 23191,
+                "assistantWordsCount": 4219
+            }
+        },
+        {
+            "month": "2023-08",
+            "count": {
+                "threadCount": 7,
+                "userCharacterCount": 3313,
+                "userWordsCount": 597,
+                "assistantCharacterCount": 5252,
+                "assistantWordsCount": 960
+            }
+        },
+        {
+            "month": "2023-09",
+            "count": {
+                "threadCount": 1,
+                "userCharacterCount": 294,
+                "userWordsCount": 60,
+                "assistantCharacterCount": 4202,
+                "assistantWordsCount": 762
+            }
+        },
+        {
+            "month": "2023-10",
+            "count": {
+                "threadCount": 3,
+                "userCharacterCount": 1123,
+                "userWordsCount": 208,
+                "assistantCharacterCount": 2182,
+                "assistantWordsCount": 428
+            }
+        },
+        {
+            "month": "2023-11",
+            "count": {
+                "threadCount": 4,
+                "userCharacterCount": 292,
+                "userWordsCount": 57,
+                "assistantCharacterCount": 2988,
+                "assistantWordsCount": 542
+            }
+        },
+        {
+            "month": "2023-12",
+            "count": {
+                "threadCount": 14,
+                "userCharacterCount": 7234,
+                "userWordsCount": 1364,
+                "assistantCharacterCount": 29815,
+                "assistantWordsCount": 5133
+            }
+        },
+        {
+            "month": "2024-01",
+            "count": {
+                "threadCount": 11,
+                "userCharacterCount": 7188,
+                "userWordsCount": 1195,
+                "assistantCharacterCount": 15636,
+                "assistantWordsCount": 2668
+            }
+        },
+        {
+            "month": "2024-02",
+            "count": {
+                "threadCount": 24,
+                "userCharacterCount": 8940,
+                "userWordsCount": 1615,
+                "assistantCharacterCount": 53160,
+                "assistantWordsCount": 9064
+            }
+        },
+        {
+            "month": "2024-03",
+            "count": {
+                "threadCount": 51,
+                "userCharacterCount": 17092,
+                "userWordsCount": 2846,
+                "assistantCharacterCount": 149677,
+                "assistantWordsCount": 25370
+            }
+        },
+        {
+            "month": "2024-04",
+            "count": {
+                "threadCount": 164,
+                "userCharacterCount": 109806,
+                "userWordsCount": 17907,
+                "assistantCharacterCount": 496427,
+                "assistantWordsCount": 81453
+            }
+        },
+        {
+            "month": "2024-05",
+            "count": {
+                "threadCount": 198,
+                "userCharacterCount": 117174,
+                "userWordsCount": 17830,
+                "assistantCharacterCount": 788387,
+                "assistantWordsCount": 124614
+            }
+        },
+        {
+            "month": "2024-06",
+            "count": {
+                "threadCount": 193,
+                "userCharacterCount": 100744,
+                "userWordsCount": 17107,
+                "assistantCharacterCount": 828557,
+                "assistantWordsCount": 128956
+            }
+        },
+        {
+            "month": "2024-07",
+            "count": {
+                "threadCount": 257,
+                "userCharacterCount": 107526,
+                "userWordsCount": 17031,
+                "assistantCharacterCount": 862547,
+                "assistantWordsCount": 130249
+            }
+        },
+        {
+            "month": "2024-08",
+            "count": {
+                "threadCount": 412,
+                "userCharacterCount": 199074,
+                "userWordsCount": 30419,
+                "assistantCharacterCount": 1466955,
+                "assistantWordsCount": 230304
+            }
+        },
+        {
+            "month": "2024-09",
+            "count": {
+                "threadCount": 392,
+                "userCharacterCount": 113759,
+                "userWordsCount": 18835,
+                "assistantCharacterCount": 1685994,
+                "assistantWordsCount": 267778
+            }
+        },
+        {
+            "month": "2024-10",
+            "count": {
+                "threadCount": 357,
+                "userCharacterCount": 127458,
+                "userWordsCount": 21279,
+                "assistantCharacterCount": 1525280,
+                "assistantWordsCount": 245662
+            }
+        },
+        {
+            "month": "2024-11",
+            "count": {
+                "threadCount": 277,
+                "userCharacterCount": 113224,
+                "userWordsCount": 18020,
+                "assistantCharacterCount": 1354377,
+                "assistantWordsCount": 216317
+            }
+        },
+        {
+            "month": "2024-12",
+            "count": {
+                "threadCount": 299,
+                "userCharacterCount": 124872,
+                "userWordsCount": 19045,
+                "assistantCharacterCount": 1711966,
+                "assistantWordsCount": 260645
+            }
+        },
+        {
+            "month": "2025-01",
+            "count": {
+                "threadCount": 252,
+                "userCharacterCount": 150947,
+                "userWordsCount": 23777,
+                "assistantCharacterCount": 1325127,
+                "assistantWordsCount": 203646
+            }
+        },
+        {
+            "month": "2025-02",
+            "count": {
+                "threadCount": 265,
+                "userCharacterCount": 179948,
+                "userWordsCount": 27615,
+                "assistantCharacterCount": 1468319,
+                "assistantWordsCount": 226238
+            }
+        },
+        {
+            "month": "2025-03",
+            "count": {
+                "threadCount": 41,
+                "userCharacterCount": 39417,
+                "userWordsCount": 6726,
+                "assistantCharacterCount": 181110,
+                "assistantWordsCount": 28458
+            }
+        },
+        {
+            "month": "2025-04",
+            "count": {
+                "threadCount": 2,
+                "userCharacterCount": 520,
+                "userWordsCount": 93,
+                "assistantCharacterCount": 6221,
+                "assistantWordsCount": 969
+            }
+        },
+        {
+            "month": "2025-05",
+            "count": {
+                "threadCount": 7,
+                "userCharacterCount": 4072,
+                "userWordsCount": 649,
+                "assistantCharacterCount": 29179,
+                "assistantWordsCount": 4782
+            }
+        },
+        {
+            "month": "2025-06",
+            "count": {
+                "threadCount": 2,
+                "userCharacterCount": 127,
+                "userWordsCount": 23,
+                "assistantCharacterCount": 2991,
+                "assistantWordsCount": 403
+            }
+        }
+    ],
+    "summary": {
+        "total": 3285
+    }
+}

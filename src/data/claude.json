@@ -1,0 +1,87 @@
+{
+    "byMonth": [
+        {
+            "month": "2024-12",
+            "count": {
+                "threadCount": 8,
+                "userCharacterCount": 2253,
+                "userWordsCount": 397,
+                "assistantCharacterCount": 16068,
+                "assistantWordsCount": 2733
+            }
+        },
+        {
+            "month": "2025-01",
+            "count": {
+                "threadCount": 39,
+                "userCharacterCount": 20103,
+                "userWordsCount": 3379,
+                "assistantCharacterCount": 95935,
+                "assistantWordsCount": 15061
+            }
+        },
+        {
+            "month": "2025-02",
+            "count": {
+                "threadCount": 6,
+                "userCharacterCount": 3206,
+                "userWordsCount": 362,
+                "assistantCharacterCount": 19849,
+                "assistantWordsCount": 3373
+            }
+        },
+        {
+            "month": "2025-03",
+            "count": {
+                "threadCount": 280,
+                "userCharacterCount": 120921,
+                "userWordsCount": 20544,
+                "assistantCharacterCount": 1074569,
+                "assistantWordsCount": 170685
+            }
+        },
+        {
+            "month": "2025-04",
+            "count": {
+                "threadCount": 299,
+                "userCharacterCount": 112516,
+                "userWordsCount": 19129,
+                "assistantCharacterCount": 1077550,
+                "assistantWordsCount": 173357
+            }
+        },
+        {
+            "month": "2025-05",
+            "count": {
+                "threadCount": 259,
+                "userCharacterCount": 150557,
+                "userWordsCount": 24865,
+                "assistantCharacterCount": 938747,
+                "assistantWordsCount": 149698
+            }
+        },
+        {
+            "month": "2025-06",
+            "count": {
+                "threadCount": 123,
+                "userCharacterCount": 53313,
+                "userWordsCount": 8511,
+                "assistantCharacterCount": 615063,
+                "assistantWordsCount": 92713
+            }
+        },
+        {
+            "month": "2025-07",
+            "count": {
+                "threadCount": 35,
+                "userCharacterCount": 7234,
+                "userWordsCount": 1317,
+                "assistantCharacterCount": 189091,
+                "assistantWordsCount": 29319
+            }
+        }
+    ],
+    "summary": {
+        "total": 1049
+    }
+}
