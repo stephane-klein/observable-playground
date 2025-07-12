@@ -1,0 +1,7 @@
+services:
+  nginx:
+    image: stephaneklein/data.sklein.xyz:latest
+    build: .
+    restart: unless-stopped
+    ports:
+    - 80:80
