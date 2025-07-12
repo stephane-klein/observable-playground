@@ -1,12 +1,24 @@
-# Conversations Archive
+# Observable playground
+
+I used this playground to learn how to use the following open source components:
+
+- [Observable Framework](https://observablehq.com/framework/)
+- [Observable Plot](https://observablehq.com/plot/)
+- [Arquero](https://idl.uw.edu/arquero/)
+
+I used this playground to deploy information on <https://data.sklein.xyz> but this is a temporary situation.
+This was not the primary objective of this playground.
 
 ```sh
 $ mise install
 $ pnpm install
 $ ./scripts/generate-all-conversations.json.js
 $ pnpm run dev
+Observable Framework v1.13.3
+↳ http://127.0.0.1:3000/
 ```
 
+Si besoin, voici comment générer une version statique de ce site:
 
 ```sh
 $ pnpm run build
