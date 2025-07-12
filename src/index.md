@@ -8,6 +8,8 @@ Depuis juin 2025, j'ai migré vers [Open WebUI](https://openwebui.com/) couplé 
 const longData = FileAttachment("data/all-conversations.long.json").json();
 ```
 
+Pour en savoir plus sur la méthode que j'ai utilisée pour exporter ces données : [Une extension browser pour exporter ses threads Claude.ia et ChatGPT](https://notes.sklein.xyz/2025-07-11_1752/).
+
 ## Nombre de threads par mois
 
 Voici le nombre de *threads* que j'ai ouverts par mois, sur ChatGPT et Claude :
