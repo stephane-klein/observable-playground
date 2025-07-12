@@ -10,7 +10,7 @@ const longData = FileAttachment("data/all-conversations.long.json").json();
 
 ## Nombre de threads par mois
 
-Voici le nombre de *threads* que j'ai ouvert par mois, sur ChatGPT et Claude :
+Voici le nombre de *threads* que j'ai ouverts par mois, sur ChatGPT et Claude :
 
 ```js
 const threads = aq.from(longData)
@@ -68,7 +68,7 @@ Inputs.table(
 )
 ```
 
-## Nombre de mots envoyés et reçu par mois
+## Nombre de mots envoyés et reçus par mois
 
 ```js
 const words = aq.from(longData)
